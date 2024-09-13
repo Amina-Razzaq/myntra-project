@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even/odd</title>
+</head>
+<body>
+    <script>
+function isOdd(number){
+    let rem = number % 2;
+    let isOdd =rem ==1;
+    return isOdd;
+}
+//console.log( isOdd(4));
+//console.log( isOdd(0));
+//console.log( isOdd(5));
+//console.log( isOdd(9999));
+ function larger(num1,num2){
+   // if ( num1>num2){
+     //   return num1;
+    //} else {
+    //    return num2;
+   // } 
+    //ternory operator due to one line return on both
+    return num1 >num2 ? num1 : num2;
+ }
+// console.log( larger(4,5));
+ //console.log( larger(501,1105));
+ //console.log( larger(20,5));
+
+function toFahrenhite( celsiusValue){
+    return 9/5 *celsiusValue + 32;
+}
+console.log(toFahrenhite(38));
+console.log(toFahrenhite(0));
+console.log(toFahrenhite(200));
+    </script>
+</body>
+</html>

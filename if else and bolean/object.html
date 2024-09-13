@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+//let product ={
+  //  company:'Mango',
+    //'item-name':'T_shirt',
+   // price:786,
+//};
+//console.log(product.company);
+//product.company= 'Banana'
+//console.log(product.company);
+//console.log(product['item-name'])
+//delete product.company
+//console.log(product)
+
+// let product ={
+//     company:'Mango',
+//     'item-name':'T_shirt',
+//     price:786,
+//     displayPrice:function(){
+//         console.log(`price of the product is ₹${product.price}`)
+//     } 
+// };
+// product.displayPrice();
+// console.log('This is KG Coding'.toLowerCase())
+// console.log('This is KG Coding'.replace( 'KG' ,'knowledge gate'))
+let product={
+    name:'jeans',
+    size:'S',
+    fit:'slim fit',
+    'delivery-time':'same-day'
+}
+// console.log(product)
+// let copyProduct=product;
+// console.log(product);
+// copyProduct.size='M'
+// console.log(product);
+// copyProduct.fit='loose fit'
+// console.log(product);
+// console.log(product['delivery-time'])
+// let obj={
+//     message:'Good job',
+//     status:'Complete',
+// }
+// console.log(obj);
+// let{message,status}=obj
+// console.log(message);
+// console.log(status);
+let item ={
+    name: 'shirt',
+    price:200,
+    rating:{
+        reviews:4.3,
+        noOfViewers:3456,
+    },
+
+};
+// console.log(typeof item);
+// console.log(item);
+// let str=JSON.stringify(item)
+// console.log(typeof str)
+// console.log(str)
+// let newProduct=JSON.parse(str)
+// console.log(typeof newProduct)
+// console.log(newProduct)
+
+//localStorage.setItem('name', 'kG Coding');
+console.log(localStorage.getItem('name'));
+//localStorage.setItem('item',JSON.stringify(item))
+console.log(localStorage.getItem('item'))
+let product2=JSON.parse(localStorage.getItem('item'))
+console.log(product2);
+localStorage.removeItem('name')
+localStorage.clear()
+    </script>
+ 
+    
+</body>
+</html>
